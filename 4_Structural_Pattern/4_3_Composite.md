@@ -1,5 +1,4 @@
 복합체(Composite pattern)
-가교(Bridge)
 * 최종 정리
 - 컨터에너 와 내용물을 동일하게 다루기 위한 패턴
 -               과자(Component)
