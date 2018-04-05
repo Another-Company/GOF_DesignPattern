@@ -1,6 +1,6 @@
 명령 연쇄 (Command Pattern)
 * 최종 정리
-- 명령을 캐슐화 하여 객체로 만든다
+- 명령을 캡슐화 하여 객체로 만든다
 - 이 패턴의 핵심은 Command 추상 클래스 와 그안에 있는 Execute() 이다
 
 * Inflearn
