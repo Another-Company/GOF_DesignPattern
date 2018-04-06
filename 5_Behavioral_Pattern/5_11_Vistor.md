@@ -7,14 +7,12 @@
 - 객체에서 정의되지 못한 처리로직을 객체 밖에서 처리 한다
 ```java
 public interface Vistor {
-    public void visit();
+    public void visit(Visitable visitable);
 }
 public interface Visitable {
     public void accept(Vistor vsitor){
-
     }
 }
-
 public class VistorA implements Vistor{
     private int ageSum;
     public VisitorA(){
@@ -22,15 +20,12 @@ public class VistorA implements Vistor{
     }
     @Override
     public void visit(Visitable visitable){
-        if(visitable instanceof VisitableA){
+        if(visitable instanceOf VisitableA){
             ageSum += ((VisitableA)visitable).getAge();
         }else{
-
         }
     }
-
 }
-
 public class VistableA implements Visitable {
     private int age;
     public VisitableA(int age){
@@ -41,8 +36,6 @@ public class VistableA implements Visitable {
         visitor.visist(this);
     }
 }
-
-
 public class Main {
     public static void main(String[] args){
         VisitableA v1 = new VisitableA();
