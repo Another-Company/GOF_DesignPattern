@@ -25,7 +25,7 @@ class Facade {
     }
 }
 // Package1
-class HelpSystem01 { // 간은 package에서만 접근 가능
+class HelpSystem01 { // 같은 package에서만 접근 가능
         public HelpySystem(){
         print("HELP !!");
     }
@@ -34,7 +34,7 @@ class HelpSystem01 { // 간은 package에서만 접근 가능
     }
 }
 // Package1
-class HelpSystem02 { // 간은 package에서만 접근 가능
+class HelpSystem02 { // 같은 package에서만 접근 가능
         public HelpySystem(){
         print("HELP !!");
     }
@@ -43,7 +43,7 @@ class HelpSystem02 { // 간은 package에서만 접근 가능
     }
 }
 // Package1
-class HelpSystem03 { // 간은 package에서만 접근 가능
+class HelpSystem03 { // 같은 package에서만 접근 가능
         public HelpySystem(){
         print("HELP !!");
     }
@@ -77,7 +77,7 @@ public class Main {
 
 3. 활용성
 - 시스템 범위가 확장되면, 또한 구체적으로 설계되면 서브시스템은 계속 복잡해지고, 패턴을 적용하고 확장성을 고려하면서 만들기 때문에
-  작은 클래스들이 낳이 생기게 된다 
+  작은 클래스들이 많이 생기게 된다 
     -> 이걸 퍼사드가 해결해준다
 - 서브 시스템과 사용자 코드 간의 결합도를 약하게 만든다
     -> 서브시스템내 정의된 요소들은 강하게 결합될수 있고, 서브시스템과 사용자 간의 결합이 약해지면 서브시스템 내의 요소를 다양화하는
